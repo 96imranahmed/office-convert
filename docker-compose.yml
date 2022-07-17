@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    volumes:
+      - ./server/:/server/
+    ports:
+      - "5000:3000"
